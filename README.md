@@ -1,10 +1,10 @@
 # Template for Maven based exercises
 
 Build CI:
-[![workflow](https://github.com/phuc-hyphen/java_api_training/actions/workflows/build.yml/badge.svg)](https://github.com/phuc-hyphen/java_api_training/actions/workflows/build.yml)
+[![workflow](https://github.com/phuc-hyphen/web_app_spring_training/actions/workflows/build.yml/badge.svg)](https://github.com/phuc-hyphen/java_api_training/actions/workflows/build.yml)
 
 Code coverage:
-[![codecov](https://codecov.io/gh/phuc-hyphen/java_api_training/branch/main/graph/badge.svg)](https://codecov.io/gh/phuc-hyphen/java_api_training)
+[![codecov](https://codecov.io/gh/phuc-hyphen/web_app_spring_training/branch/main/graph/badge.svg)](https://codecov.io/gh/phuc-hyphen/java_api_training)
 
 
 ## Build the project
