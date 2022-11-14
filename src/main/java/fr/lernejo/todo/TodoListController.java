@@ -8,18 +8,23 @@ import java.util.ArrayList;
 @RequestMapping("/api/todo")
 public class TodoListController {
 
+    private final TodoRepository repo;
 
-    private final ArrayList<Todo> Todolist = new ArrayList<Todo>();
+//    private final ArrayList<Todo> Todolist = new ArrayList<Todo>();
+
+    public TodoListController(TodoRepository repo) {
+        this.repo = repo;
+    }
 
     @PostMapping
-    public void AddTodo(@RequestBody Todo todo)
-    {
-        Todolist.add(todo);
+    public void AddTodo(@RequestBody TodoEntity todo) {
+        repo.save(todo);
+//        repo.add(todo);
     }
+
     @GetMapping
-    public ArrayList<Todo> GetTodo()
-    {
-        return Todolist;
+    public Iterable<TodoEntity> GetTodo() {
+        return repo.findAll();
     }
 
 
